@@ -1,0 +1,22 @@
+/* bugSolution.css */
+
+/* Instead of relying solely on calc(), we use a more robust approach */
+.container {
+  width: 50%; /* Use percentage for initial width */
+  margin-left: 10px; /* Use margin for adjustment */
+  /* ... rest of the styles ... */
+}
+
+/* Alternative approach: Using variables and padding instead of calc() */
+:root {
+  --container-width: 50%;
+  --container-margin: 10px;
+}
+
+.container2 {
+  width: var(--container-width);
+  padding-left: var(--container-margin);
+  /* ... rest of the styles ... */
+}
+
+/* This approach ensures consistent behavior across browsers and avoids edge cases associated with calc().*/
